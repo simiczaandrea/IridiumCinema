@@ -1,0 +1,63 @@
+
+@import '../Utils/Styles/colors.scss';
+
+$input-class-prefix: 'textInput';
+
+.#{$input-class-prefix} {
+    position: relative;
+    box-sizing: border-box;
+    margin: 20px;
+
+    &__inputField {
+        box-sizing: border-box;
+        padding: 1.25rem;
+        border-radius: 5px;
+        border: 2px solid $color-monochrome-300;
+        position: relative;
+        width: 100%;
+        height: auto;
+        font-size: inherit;
+        top: 0;
+        left:0;
+        background: none;
+        outline: none;
+        color: $color-monochrome-200;
+        
+        &:hover {
+            border: 2px solid $color-monochrome-200;
+        }
+        &:focus {
+            border: 2px solid $color-primary-100;
+        }
+        &::placeholder {
+            font-size: 1.2rem;
+        }
+    }
+    
+    &__helpText {
+        color: $color-error;
+        font-size: 1rem;
+    }
+
+    &__label {
+        position: absolute;
+        top: 1.2rem;
+        left: 1.25rem;
+        cursor: text;
+        color: $color-monochrome-200;
+        transition: top 200ms ease-in, left 200ms ease-in, font-size 200ms ease-in;
+        background-color: $color-monochrome-400;
+        padding: 0 0.5rem;
+        font-size: 1.2rem;
+    }
+
+    &__inputField:focus ~ &__label,
+    &__inputField:not(:placeholder-shown):not(:focus) ~ &__label
+    {
+        top: -0.5rem;
+        font-size: 1rem;
+        left: 0.8rem;
+        color: $color-primary-200;
+    }
+}
+
