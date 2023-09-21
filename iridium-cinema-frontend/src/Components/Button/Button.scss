@@ -1,0 +1,46 @@
+@import '../../Utils/Styles/colors.scss';
+@import '../../Utils/Styles//spaces.scss';
+@import '../../Utils/Styles/borders.scss';
+@import '../../Utils/Styles/typography.scss';
+
+$button-class-prefix: 'button';
+
+.#{$button-class-prefix} {
+    border-radius: $border-radius-large;
+    margin: $space-50;
+    border: $border-width-large solid $color-primary-100;
+    padding: $space-75;
+    
+    &--outline {
+        background-color: transparent;
+    }
+    &--filled {
+        background-color: $color-primary-100;
+    }
+
+    &__label {
+        font-size: $font-size-150;
+        font-weight: bold;
+    }
+
+    &--filled__label {
+        color:$color-primary-400;
+    }
+
+    &--outline__label {
+        color:$color-primary-200;
+    }
+
+    &--filled:hover  {
+        background-color: $color-primary-200;
+        border: $border-width-large solid $color-primary-200;
+    }
+
+    &--outline:hover {
+        background-color: $color-primary-400;
+
+        &--outline__label {
+            color:$color-primary-200;
+        }
+    }
+}
