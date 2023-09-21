@@ -1,0 +1,84 @@
+
+@import '../../Utils/Styles/colors.scss';
+@import '../../Utils/Styles//spaces.scss';
+@import '../../Utils/Styles/borders.scss';
+@import '../../Utils/Styles/typography.scss';
+@import '../../Utils/Styles/animation.scss';
+
+$input-class-prefix: 'textInput';
+
+.#{$input-class-prefix} {
+    position: relative;
+    box-sizing: border-box;
+    margin: $space-125;
+
+    &__inputField {
+        box-sizing: border-box;
+        padding: $space-100;
+        border-radius: $border-radius-medium;
+        border: $border-width-medium solid $color-monochrome-300;
+        position: relative;
+        width: 100%;
+        height: auto;
+        font-size: inherit;
+        top: 0;
+        left:0;
+        background: none;
+        outline: none;
+        color: $color-monochrome-200;
+        
+        &:hover {
+            border: $border-width-medium solid $color-monochrome-200;
+            
+        }
+        &:focus {
+            border: $border-width-medium solid $color-primary-100;
+        }
+        &::placeholder {
+            font-size: $font-size-150;
+        }
+
+        &--error,
+        &--error:focus,
+        &--error:hover {
+            border: $border-width-medium solid $color-error;
+            color: $color-error;
+        }
+    }
+
+    
+    &__helpText {
+        color: $color-error;
+        font-size: $font-size-100;
+    }
+
+    &__label {
+        position: absolute;
+        top: $space-100;
+        left: $space-100;
+        cursor: text;
+        color: $color-monochrome-200;
+        transition: $easy-in-animation;
+        background-color: $color-monochrome-400;
+        padding: $space-0 $space-50;
+        font-size: $font-size-200;
+
+        &--error {
+            color: $color-error;
+        }
+    }
+
+    &__inputField:focus ~ &__label,
+    &__inputField:not(:placeholder-shown):not(:focus) ~ &__label
+    {
+        top: -$space-50;
+        font-size: $font-size-100;
+        left: $space-75;
+        color: $color-primary-200;
+
+        &--error {
+            color: $color-error;
+        }
+    }
+}
+

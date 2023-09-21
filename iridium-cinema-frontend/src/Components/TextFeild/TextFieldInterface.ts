@@ -27,6 +27,10 @@ export interface textFieldInterface {
      */
     value: string,
     /**
+     * if it is true, set the color of input field to red
+     */
+    isError: boolean,
+    /**
      * 
      * @param event 
      * handles the changes of the input field value
