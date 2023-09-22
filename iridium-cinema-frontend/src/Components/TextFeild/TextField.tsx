@@ -12,6 +12,7 @@ import './TextField.scss'
  * -- helpText - it shows an error message during validation (optional)
  * -- isRequired - set if the input field is required or not (mandatory)
  * -- value - the value of the input field (mandatory)
+ * -- isError - it set a style if there is an error during the validation
  * -- onChange - handles the input field value changes (mandatory)
  * @returns TextField component with label and optionally a help text
  */
