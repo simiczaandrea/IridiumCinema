@@ -1,0 +1,47 @@
+@import '../../Utils/Styles/colors.scss';
+@import '../../Utils/Styles//spaces.scss';
+@import '../../Utils/Styles/borders.scss';
+@import '../../Utils/Styles/typography.scss';
+@import '../../Utils/Styles/sizes.scss';
+
+$checkbox-class-prefix: 'checkbox';
+
+.#{$checkbox-class-prefix} {
+    display: flex;
+    align-items: center;
+
+    &__input {
+        appearance: none;
+        border: $border-width-medium solid $color-primary-100;
+        border-radius: $border-radius-medium;
+        width: $size-125;
+        height: $size-125;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        outline: none;
+    }
+    &__input::after {
+        content: '\f00c';
+        font-family: 'Font Awesome 5 Free';
+        font-weight: 900;
+        font-size: $font-size-50;
+        color: $color-primary-200;
+        display: none;
+    }
+
+    &__input:hover {
+        background-color: $color-primary-400;
+        cursor: pointer;
+    }
+
+    &__input:checked::after {
+        display: block;
+    }
+
+    &__label {
+        margin-left: $space-50;
+        color: $color-primary-100;
+        font-size: $font-size-100;
+    }
+}
