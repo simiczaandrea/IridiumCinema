@@ -34,10 +34,12 @@ $button-class-prefix: 'button';
     &--filled:hover  {
         background-color: $color-primary-200;
         border: $border-width-large solid $color-primary-200;
+        cursor: pointer;
     }
 
     &--outline:hover {
         background-color: $color-primary-400;
+        cursor: pointer;
 
         &--outline__label {
             color:$color-primary-200;

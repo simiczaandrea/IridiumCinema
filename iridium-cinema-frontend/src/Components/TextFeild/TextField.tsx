@@ -7,13 +7,13 @@ import './TextField.scss'
 
 /**
  * @param props 
- * -- label - the label for the input field (mandatory)
- * -- type - the type of the input field it can be 'text' | 'password' | 'email' | 'number' (mandatory)
- * -- helpText - it shows an error message during validation (optional)
- * -- isRequired - set if the input field is required or not (mandatory)
- * -- value - the value of the input field (mandatory)
- * -- isError - it set a style if there is an error during the validation
- * -- onChange - handles the input field value changes (mandatory)
+ * @note label - the label for the input field (mandatory)
+ * @note type - 'text' | 'password' | 'email' | 'number' (mandatory)
+ * @note helpText - it shows an error message during validation (optional)
+ * @note isRequired - set if the input field is required or not (mandatory)
+ * @note value - the value of the input field (mandatory)
+ * @note isError - it set a style if there is an error during the validation
+ * @note onChange - handles the input field value changes (mandatory)
  * @returns TextField component with label and optionally a help text
  */
 const TextField = (props: textFieldInterface) => {
