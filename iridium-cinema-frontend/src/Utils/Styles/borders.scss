@@ -5,10 +5,10 @@ $border-width-large: 3px;
 $border-width-x-large: 5px;
 $border-width-xx-large: 10px;
 
-
 $border-radius-small: 3px;
 $border-radius-medium: 6px;
 $border-radius-large: 10px;
+$border-radius-half: 50%;
 
 $opacity-10: 0.1;
 $opacity-20: 0.2;
@@ -18,3 +18,7 @@ $shadow-x-small: 0 1px 3px rgba(0,0,0, $opacity-60);
 $shadow-small: 0 1px 4px rgba(0,0,0, $opacity-20);
 $shadow-medium: 0 2px 8px rgba(0,0,0, $opacity-20);
 $shadow-large: 0 4px 10px rgba(0,0,0, $opacity-20);
+
+@mixin loading-spinner-shadow($color){
+    box-shadow: 1px 5px 2px $color;
+}
