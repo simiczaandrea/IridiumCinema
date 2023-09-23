@@ -1,0 +1,49 @@
+@import '../../Utils/Styles/animation.scss';
+@import '../../Utils/Styles/borders.scss';
+@import '../../Utils/Styles/sizes.scss';
+
+$loading-spinner-class-prefix: 'loading-spinner';
+
+
+.#{$loading-spinner-class-prefix} {
+    position: absolute;
+    min-height: 100vh;
+    width: 100vw;
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.8);
+    
+    &__loader{
+        position: absolute;
+        border-radius: $border-radius-half;
+    }
+
+    &__loader--1{
+        width: $size-450;
+        height: $size-450;
+        animation: $linear-infinite-3_2;
+    }
+
+    &__loader--2{
+        width: $size-300;
+        height: $size-300;
+        animation:$linear-infinite-1_6;
+    }
+
+    &__loader--3{
+        width: $size-150;
+        height: $size-150;
+        animation: $linear-infinite-0_8;
+    }
+
+    &__loader::before{
+        content: '';
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        border-radius: 50%;
+    }
+}
