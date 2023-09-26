@@ -1,6 +1,6 @@
 import { ChangeEvent } from "react";
 
-export interface checkboxInterface {
+export interface checkboxProps {
     /**
      * Name of the checkbox
      */
@@ -19,5 +19,5 @@ export interface checkboxInterface {
      * - handles whether the checkbox checked or not
      * @returns void
      */
-    onChange: (value: ChangeEvent<HTMLInputElement>) => void;
+    onChange(value: ChangeEvent<HTMLInputElement>): void;
 }

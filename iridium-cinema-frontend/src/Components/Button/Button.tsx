@@ -1,5 +1,5 @@
 import React from 'react'
-import { buttonInterface } from './ButtonInterface';
+import { buttonProps } from './ButtonInterface';
 
 import './Button.scss'
 /**
@@ -10,7 +10,7 @@ import './Button.scss'
  * @note onClick - handles click event
  * @returns Button component
  */
-const Button = (props: buttonInterface) => {
+const Button = (props: buttonProps) => {
     const {label, type, variant, onClick} = props;
   return (
     <button

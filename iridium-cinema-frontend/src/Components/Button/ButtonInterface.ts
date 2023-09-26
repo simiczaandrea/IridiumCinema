@@ -1,7 +1,7 @@
 type buttonType = 'button' | 'submit' | 'reset';
 type buttonVariant = 'filled' | 'outline'
 
-export interface buttonInterface {
+export interface buttonProps {
     /**
      * the label of the button
      */
@@ -21,5 +21,5 @@ export interface buttonInterface {
      * handles the click event
      * @returns void
      */
-    onClick: (event: React.MouseEvent<HTMLButtonElement, MouseEvent>) => void;
+    onClick(event: React.MouseEvent<HTMLButtonElement, MouseEvent>):  void;
 }

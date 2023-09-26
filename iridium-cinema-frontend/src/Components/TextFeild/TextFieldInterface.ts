@@ -1,6 +1,6 @@
 type inputFieldTypes = 'text' | 'password' | 'email' | 'number';
 
-export interface textFieldInterface {
+export interface textFieldProps {
     /**
      * the label of the input field
      */
@@ -36,5 +36,5 @@ export interface textFieldInterface {
      * handles the changes of the input field value
      * @returns void
      */
-    onChange: (event: React.ChangeEvent<HTMLInputElement>) => void;
+    onChange(event: React.ChangeEvent<HTMLInputElement>): void;
 }

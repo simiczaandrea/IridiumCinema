@@ -1,5 +1,5 @@
 import React from 'react'
-import { checkboxInterface } from './CheckboxInterface';
+import { checkboxProps } from './CheckboxInterface';
 
 import './Checkbox.scss';
 /**
@@ -11,7 +11,7 @@ import './Checkbox.scss';
  * @note onChange - handles the check event
  * @returns checkbox component
  */
-const Checkbox = (props: checkboxInterface) => {
+const Checkbox = (props: checkboxProps) => {
     const {name, label, isChecked, onChange} = props;
     
     return (

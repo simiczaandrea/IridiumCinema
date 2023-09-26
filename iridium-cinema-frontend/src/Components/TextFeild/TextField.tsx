@@ -1,5 +1,5 @@
 import React from 'react'
-import { textFieldInterface } from './TextFieldInterface';
+import { textFieldProps } from './TextFieldInterface';
 import './TextField.scss'
 
 //@Todo - handle error, the input field and text should be highlighted red 
@@ -16,7 +16,7 @@ import './TextField.scss'
  * @note onChange - handles the input field value changes (mandatory)
  * @returns TextField component with label and optionally a help text
  */
-const TextField = (props: textFieldInterface) => {
+const TextField = (props: textFieldProps) => {
     const { label, type, name, helpText, isRequired, value, isError, onChange} = props;
 
     return (
