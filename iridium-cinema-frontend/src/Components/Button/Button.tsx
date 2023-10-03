@@ -11,7 +11,8 @@ import './Button.scss'
  * @returns Button component
  */
 const Button = (props: buttonProps) => {
-    const {label, type, variant, onClick} = props;
+  const {label, type, variant, onClick} = props;
+  
   return (
     <button
         type={type}

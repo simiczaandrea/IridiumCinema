@@ -1,0 +1,51 @@
+@import '../../Utils/Styles/index';
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+$search-box-class-prefix: 'search-box';
+
+.#{$search-box-class-prefix} {
+    position: relative;
+    box-sizing: border-box;
+    margin: $space-125 $space-0;
+    width: 100%;
+    display: flex;
+
+
+    &__inputField {
+        box-sizing: border-box;
+        padding: $space-100;
+        border-radius: $border-radius-medium;
+        border: $border-width-medium solid $color-monochrome-300;
+        width: 100%;
+        height: auto;
+        font-size: inherit;
+        background: none;
+        outline: none;
+        color: $color-monochrome-200;
+    
+        &:hover {
+            border: $border-width-medium solid $color-monochrome-200;
+            
+        }
+        &:focus {
+            border: $border-width-medium solid $color-primary-100;
+        }
+        &::placeholder {
+            font-size: $font-size-150;
+        }
+    }
+
+    &__icon {
+        position: absolute;
+        right: $space-100;
+        top: $space-100;
+        width: $size-150;
+        height: auto;
+        color: $color-monochrome-300;
+    }
+}
