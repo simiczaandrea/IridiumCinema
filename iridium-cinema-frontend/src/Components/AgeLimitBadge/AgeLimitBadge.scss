@@ -1,0 +1,50 @@
+@import '../../Utils/Styles/index';
+
+$age-limit-badge-class-prefix: 'age-limit-badge';
+
+.#{$age-limit-badge-class-prefix} {
+    box-sizing: border-box;
+    border-radius: $border-radius-half;
+    background-color: $color-monochrome-400;
+    border: $border-width-large solid $color-tertiary-100;
+    color: $color-tertiary-100;
+    width: $size-150;
+    height: $size-150;
+    font-size: $font-size-25;
+    font-weight: bold;
+    
+    &--small,
+    &--small &__age {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    
+    &--medium,
+    &--medium &__age {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: $size-300;
+        height: $size-300;
+        font-size: $size-150;
+        border-width: $border-width-x-large;
+    }
+    
+    &--large,
+    &--large &__age {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: $size-525;
+        height: $size-525;
+        font-size: $font-size-500;
+        border-width: $border-width-xx-large;
+    }
+    
+    &--red {
+        border-color: $color-error;
+        color: $color-error;
+    }
+}
