@@ -42,4 +42,14 @@ $button-class-prefix: 'button';
             color:$color-primary-200;
         }
     }
+
+    &--filled:focus {
+        outline: none;
+        background-color: $color-primary-200;
+    }
+
+    &--outline:focus {
+        outline: none;
+        border: $border-width-large solid $color-primary-300;
+    }
 }

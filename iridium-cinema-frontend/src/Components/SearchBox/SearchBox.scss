@@ -23,7 +23,7 @@ $search-box-class-prefix: 'search-box';
         border: $border-width-medium solid $color-monochrome-300;
         width: 100%;
         height: auto;
-        font-size: inherit;
+        font-size: $font-size-100;
         background: none;
         outline: none;
         color: $color-monochrome-200;
@@ -44,8 +44,9 @@ $search-box-class-prefix: 'search-box';
         position: absolute;
         right: $space-100;
         top: $space-100;
-        width: $size-150;
+        width: $size-125;
         height: auto;
         color: $color-monochrome-300;
+        
     }
 }

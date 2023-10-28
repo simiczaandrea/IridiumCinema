@@ -2,7 +2,11 @@ import React from 'react'
 import { AgeLimitBadgeProps } from './AgeLimitBadgeInterface'
 import './AgeLimitBadge.scss';
 
-
+/**
+ * 
+ * @param props age, size
+ * @returns Age limit badge
+ */
 const AgeLimitBadge = (props: AgeLimitBadgeProps) => {
   const {age, size} = props;
   
