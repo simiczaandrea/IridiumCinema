@@ -1,0 +1,60 @@
+@import '../../Utils/Styles/index';
+
+$select-class-prefix: 'select';
+
+.#{$select-class-prefix}{
+    position: relative;
+    box-sizing: border-box;
+    width: 100%;
+    margin: 10px;
+
+    &__box{
+        border-radius: $border-radius-medium;
+        border: $border-width-medium solid $color-monochrome-300;
+        background: none;
+        color: $color-monochrome-300;
+        padding: $space-100;
+        font-weight: bold;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        cursor: pointer;
+        user-select: none;
+    }
+
+    &__option {
+        box-sizing: border-box;
+        position: absolute;
+        background-color:$color-monochrome-300;
+        border-radius: $border-radius-medium;
+        color: $color-monochrome-100;
+        top: 110%;
+        overflow: hidden;
+        width: 100%;
+
+    }
+
+    &__icon {
+        color: $color-monochrome-300;
+
+    }
+
+    &__option-item{
+        text-decoration: none;
+        padding: $space-100;
+        cursor: pointer;
+    }
+
+    &__option-item:hover {
+        background-color: $color-primary-100;
+        color: $color-primary-400;
+        font-weight: bold;
+    }
+
+    &__option-item--active {
+        background-color: $color-primary-100;
+        color: $color-primary-400;
+        font-weight: bold;
+    }
+
+}
